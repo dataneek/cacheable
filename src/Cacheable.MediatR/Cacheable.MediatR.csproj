@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Cacheable</RootNamespace>
+    <RepositoryUrl>git://github.com/neekgreen/cacheable</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/neekgreen/cacheable</PackageProjectUrl>
+    <Copyright>Copyright Nicholas Myers</Copyright>
+    <Description>A set of extensions to provide caching support on MediatR based request handlers.</Description>
+    <Version>0.2.0</Version>
+    <Company>Nicholas Myers</Company>
+    <Authors>Nicholas Myers</Authors>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="3.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cacheable.Abstractions\Cacheable.Abstractions.csproj" />
+    <ProjectReference Include="..\Cacheable\Cacheable.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -10,6 +10,8 @@
     using Microsoft.Extensions.Options;
     using StructureMap;
     using Swashbuckle.AspNetCore.Swagger;
+    using WebApiDotNetCore20.Models;
+    using Cacheable;
 
     public class Startup
     {
@@ -40,11 +42,17 @@
                     scanner.ConnectImplementationsToTypesClosing(typeof(IRequestHandler<,>)); 
                 });
 
+                config.For<IResultBuilder>().Use<ResultBuilder>().Singleton();
+
                 config.For(typeof(IRequestHandler<,>)).DecorateAllWith(typeof(MemoryCacheRequestHandler<,>));
+                config.For(typeof(IAsyncRequestHandler<,>)).DecorateAllWith(typeof(MemoryCacheAsyncRequestHandler<,>), 
+                    (t) => t.ReturnedType.IsAssignableFrom(typeof(ICacheableRequestHandler)));
+
                 config.For<SingleInstanceFactory>().Use<SingleInstanceFactory>(ctx => t => ctx.GetInstance(t));
                 config.For<MultiInstanceFactory>().Use<MultiInstanceFactory>(ctx => t => ctx.GetAllInstances(t));
 
                 config.For<IMediator>().Use<Mediator>();
+
                 config.For<IMemoryCache>().Use(() => new MemoryCache(Options.Create(new MemoryCacheOptions()))).Singleton();
 
                 config.Populate(services);

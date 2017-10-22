@@ -1,10 +1,11 @@
-﻿namespace WebApiDotNetCore20
+﻿namespace WebApiDotNetCore20.Features.WithCache
 {
     using System;
     using Cacheable;
     using MediatR;
+    using Models;
 
-    public class Command : IRequest<CommandResult>, ICacheableRequest
+    public class Command : IRequest<Result>, ICacheableRequest
     {
         public int Number { get; set; }
 

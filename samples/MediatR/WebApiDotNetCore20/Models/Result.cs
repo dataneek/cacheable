@@ -1,8 +1,8 @@
-﻿namespace WebApiDotNetCore20
+﻿namespace WebApiDotNetCore20.Models
 {
     using System;
 
-    public class CommandResult
+    public class Result
     {
         public int Number { get; set; }
         public string Text { get; set; }

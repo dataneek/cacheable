@@ -4,7 +4,7 @@
     using Cacheable;
     using MediatR;
 
-    public abstract class MemoryCacheAsyncRequestHandler<TRequest, TResponse> : IAsyncRequestHandler<TRequest, TResponse> where TRequest : IRequest<TResponse>
+    public class MemoryCacheAsyncRequestHandler<TRequest, TResponse> : IAsyncRequestHandler<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
         private readonly IAsyncRequestHandler<TRequest, TResponse> innerHandler;
         private readonly IMemoryCache cache;

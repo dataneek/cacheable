@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Cacheable</RootNamespace>
+    <RepositoryUrl>git://github.com/neekgreen/cacheable</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/neekgreen/cacheable</PackageProjectUrl>
+    <Copyright>Copyright Nicholas Myers</Copyright>
+    <Description>Abstractions used to help provide caching support.</Description>
+    <Version>0.2.0</Version>
+    <Authors>Nicholas Myers</Authors>
+    <Company>Nicholas Myers</Company>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Cacheable\Cacheable.csproj" />
+  </ItemGroup>
+
+</Project>

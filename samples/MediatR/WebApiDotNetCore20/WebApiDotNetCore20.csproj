@@ -22,7 +22,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Cacheable\Cacheable.csproj" />
+    <ProjectReference Include="..\..\..\src\Cacheable.Abstractions\Cacheable.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\src\Cacheable.MediatR\Cacheable.MediatR.csproj" />
+    <ProjectReference Include="..\..\..\src\Cacheable\Cacheable.csproj" />
   </ItemGroup>
 
 </Project>
