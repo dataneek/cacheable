@@ -2,24 +2,18 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <Description>A light weight caching framework for MediatR</Description>
+    <Description>Generic interfaces to provide caching support.</Description>
     <Copyright>Copyright Nicholas Myers</Copyright>
-    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionPrefix>0.2.0</VersionPrefix>
     <Authors>Nicholas Myers</Authors>
     <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>Cacheable</AssemblyName>
     <PackageId>Cacheable</PackageId>
-    <PackageTags>caching;request;requesthandlers</PackageTags>
+    <PackageTags>caching;request;mediators;handlers;command;query;decorators</PackageTags>
     <PackageProjectUrl>https://github.com/neekgreen/cacheable</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <RepositoryUrl>git://github.com/neekgreen/cacheable</RepositoryUrl>
-  </PropertyGroup>
-  
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <OutputPath>bin\</OutputPath>
+    <Product>Cacheable</Product>
   </PropertyGroup>
 
   <ItemGroup>
