@@ -20,7 +20,7 @@ This command will download and install Cacheable. Let me know if you have questi
 
 ## Using Cacheable
 
-Cacheable requires MediatR and your IoC container of choice. The decorator pattern is used to wrap the `IRequestHandler` and `IAsyncRequestHandler` classes with 
+Cacheable requires MediatR and your IoC container of choice. The decorator pattern is used to wrap the `IRequestHandler` and `IAsyncRequestHandler` classes with Cacheable implementations that will handle the caching.
 
 ### With StructureMap
 
@@ -31,9 +31,3 @@ For(typeof(IRequestHandler<,>)).DecorateAllWith(typeof(MemoryCacheRequestHandler
 ```
 For(typeof(IAsyncRequestHandler<,>)).DecorateAllWith(typeof(MemoryCacheAsyncRequestHandler<,>));
 ```
-
-### With Microsoft.Extensions.DependencyInjection and Sructor
---TBD
-
-### With Autofac
---TBD

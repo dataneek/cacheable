@@ -11,6 +11,9 @@
     <Version>0.2.0</Version>
     <Authors>Nicholas Myers</Authors>
     <Company>Nicholas Myers</Company>
+    <PackageTags>caching;request;mediators;handlers;command;query;decorators</PackageTags>
+    <Product>Cacheable.Microsoft.Extensions.Caching.Abstractions</Product>
+    <PackageId>Cacheable.Microsoft.Extensions.Caching.Abstractions</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

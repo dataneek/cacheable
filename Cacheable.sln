@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{FC7F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MediatR", "MediatR", "{A285DE98-56C9-4713-A033-EDC8BC65F110}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cacheable.Abstractions", "src\Cacheable.Abstractions\Cacheable.Abstractions.csproj", "{F665B4DB-4416-41CE-AF82-F05CFC709067}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cacheable.Microsoft.Extensions.Caching.Abstractions", "src\Cacheable.Microsoft.Extensions.Caching.Abstractions\Cacheable.Microsoft.Extensions.Caching.Abstractions.csproj", "{F665B4DB-4416-41CE-AF82-F05CFC709067}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cacheable.MediatR", "src\Cacheable.MediatR\Cacheable.MediatR.csproj", "{126F7A77-6F66-4235-A8A4-76B416ED712E}"
 EndProject
