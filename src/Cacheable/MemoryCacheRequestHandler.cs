@@ -3,7 +3,7 @@
     using Cacheable;
     using MediatR;
 
-    public abstract class MemoryCacheRequestHandler<TRequest, TResponse> : IRequestHandler<TRequest, TResponse> where TRequest : IRequest<TResponse>
+    public class MemoryCacheRequestHandler<TRequest, TResponse> : IRequestHandler<TRequest, TResponse> where TRequest : IRequest<TResponse>
     {
         private readonly IRequestHandler<TRequest, TResponse> innerHandler;
         private readonly IMemoryCache cache;
