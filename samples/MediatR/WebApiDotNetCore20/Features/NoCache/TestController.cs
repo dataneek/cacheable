@@ -2,6 +2,7 @@
 {
     using System.Threading.Tasks;
     using Microsoft.AspNetCore.Mvc;
+    using SimpleMeasure;
     using MediatR;
 
     [Route("api/no-cache")]
